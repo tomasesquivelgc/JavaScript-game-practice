@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   clothes: {
-    top: "/top/t-shirt-1.png",
-    bottom: "/bottom/jean-1.png",
+    top: "/top/top0.png",
+    bottom: "/bottom/bottom0.png",
   },
 };
 
