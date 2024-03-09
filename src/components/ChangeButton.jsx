@@ -1,18 +1,26 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setTop } from "../redux/slices/clothesSlice";
+import { setTop, setBottom } from "../redux/slices/clothesSlice";
 
-export default function ChangeButton({ src }) {
+
+export default function ChangeButton({ clothe, type }) {
+
+  const handleClotheChange = () => {
+    if (type === "top") {
+      dispatch(setTop(clothe.img));
+    } else if(type === "bottom") {
+      dispatch(setBottom(clothe.img));
+    }
+  }
+
   const dispatch = useDispatch();
 
   return (
     <button
-      onClick={() => {
-        dispatch(setTop(src));
-      }}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      onClick={handleClotheChange}
+      className=" text-white font-bold py-2 px-4 rounded h-4"
     >
-      Change
+      <img src={clothe.img} alt={`${type} ${clothe.id}`} className="h-20" />
     </button>
   );
 }
