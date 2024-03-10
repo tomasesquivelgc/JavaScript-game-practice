@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
 
 export default function Character() {
@@ -14,5 +13,5 @@ export default function Character() {
         <img src={bottom} alt="jean" className="h-32" />
       </div>
     </div>
-  )
+  );
 }

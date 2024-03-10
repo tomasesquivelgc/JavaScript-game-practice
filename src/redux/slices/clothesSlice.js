@@ -1,14 +1,14 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   clothes: {
-    top: "/top/top0.png",
-    bottom: "/bottom/bottom0.png",
+    top: '/top/top0.png',
+    bottom: '/bottom/bottom0.png',
   },
 };
 
 const clothesSlice = createSlice({
-  name: "clothes",
+  name: 'clothes',
   initialState,
   reducers: {
     setTop: (state, action) => {
@@ -22,4 +22,3 @@ const clothesSlice = createSlice({
 
 export const { setTop, setBottom } = clothesSlice.actions;
 export default clothesSlice.reducer;
-  
