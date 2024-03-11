@@ -7,9 +7,9 @@ export default function ChangeButton({ clothe, type }) {
 
   const handleClotheChange = () => {
     if (type === 'top') {
-      dispatch(setTop(clothe.img));
+      dispatch(setTop(clothe));
     } else if (type === 'bottom') {
-      dispatch(setBottom(clothe.img));
+      dispatch(setBottom(clothe));
     }
   };
 
