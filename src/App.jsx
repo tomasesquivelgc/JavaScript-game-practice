@@ -1,6 +1,7 @@
 import Character from './components/Character';
 import ChangeButton from './components/ChangeButton';
 import { topsData, bottomsData } from './data/clothingData';
+import StatsScreen from './components/StatsScreen';
 import './App.css';
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <ChangeButton key={bottom.id} clothe={bottom} type="bottom" className="h-12" />
         ))}
       </div>
+
+      <StatsScreen />
     </div>
   );
 }
