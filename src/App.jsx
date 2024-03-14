@@ -1,6 +1,7 @@
 import Character from './components/Character';
 import ChangeButton from './components/ChangeButton';
 import { topsData, bottomsData } from './data/clothingData';
+import StatsScreen from './components/StatsScreen';
 import './App.css';
 
 function App() {
@@ -11,16 +12,18 @@ function App() {
       <div className="tops">
         <h2>Tops:</h2>
         {topsData.map((top) => (
-          <ChangeButton key={top.index} clothe={top} type="top" />
+          <ChangeButton key={top.id} clothe={top} type="top" />
         ))}
       </div>
 
       <div className="bottoms">
         <h2>Bottoms:</h2>
         {bottomsData.map((bottom) => (
-          <ChangeButton key={bottom.index} clothe={bottom} type="bottom" className="h-12" />
+          <ChangeButton key={bottom.id} clothe={bottom} type="bottom" className="h-12" />
         ))}
       </div>
+
+      <StatsScreen />
     </div>
   );
 }
