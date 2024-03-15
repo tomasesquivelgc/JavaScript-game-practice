@@ -21,6 +21,17 @@ const topsData = [
       formal: 10,
     },
   },
+  {
+    id: 3,
+    name: 'Tank top',
+    price: 30,
+    img: '/top/top1.png',
+    stats: {
+      coquette: 10,
+      casual: 30,
+      formal: 0,
+    },
+  }
 ];
 
 const bottomsData = [
@@ -46,6 +57,32 @@ const bottomsData = [
       formal: 10,
     },
   },
+  {
+    id: 3,
+    name: 'Puffy leg pants',
+    price: 60,
+    img: '/bottom/bottom1.png',
+    stats: {
+      coquette: 15,
+      casual: 20,
+      formal: 0,
+    },
+  }
 ];
 
-export { topsData, bottomsData };
+const hairStylesData = [
+  {
+    id: 1,
+    name: 'Short hair',
+    price: 70,
+    img: '/hair/hair-1.png',
+  },
+  {
+    id: 2,
+    name: 'Long hair',
+    price: 80,
+    img: '/hair/hair-0.png',
+  },
+];
+
+export { topsData, bottomsData, hairStylesData };
