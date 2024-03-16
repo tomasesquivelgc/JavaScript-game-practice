@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { setTop, setBottom } from '../redux/slices/clothesSlice';
+import { setHairStyle } from '../redux/slices/hairStyles';
 
 export default function ChangeButton({ clothe, type }) {
   const dispatch = useDispatch();
@@ -10,6 +11,8 @@ export default function ChangeButton({ clothe, type }) {
       dispatch(setTop(clothe));
     } else if (type === 'bottom') {
       dispatch(setBottom(clothe));
+    }else if (type === 'hair') {
+      dispatch(setHairStyle(clothe));
     }
   };
 
@@ -29,5 +32,5 @@ ChangeButton.propTypes = {
     img: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
   }).isRequired,
-  type: PropTypes.oneOf(['top', 'bottom']).isRequired,
+  type: PropTypes.oneOf(['top', 'bottom', 'hair']).isRequired,
 };

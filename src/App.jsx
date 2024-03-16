@@ -1,6 +1,6 @@
 import Character from './components/Character';
 import ChangeButton from './components/ChangeButton';
-import { topsData, bottomsData } from './data/clothingData';
+import { topsData, bottomsData, hairStylesData } from './data/clothingData';
 import StatsScreen from './components/StatsScreen';
 import './App.css';
 
@@ -20,6 +20,13 @@ function App() {
         <h2>Bottoms:</h2>
         {bottomsData.map((bottom) => (
           <ChangeButton key={bottom.id} clothe={bottom} type="bottom" className="h-12" />
+        ))}
+      </div>
+
+      <div className="hairStyles">
+        <h2>Hair Styles:</h2>
+        {hairStylesData.map((hair) => (
+          <ChangeButton key={hair.id} clothe={hair} type="hair" />
         ))}
       </div>
 

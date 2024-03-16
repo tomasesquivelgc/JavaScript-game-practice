@@ -75,13 +75,13 @@ const hairStylesData = [
     id: 1,
     name: 'Short hair',
     price: 70,
-    img: '/hair/hair-1.png',
+    img: '/hairstyles/hair-1.png',
   },
   {
     id: 2,
     name: 'Long hair',
     price: 80,
-    img: '/hair/hair-0.png',
+    img: '/hairstyles/hair-0.png',
   },
 ];
 
